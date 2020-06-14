@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./main.css" />
+  <!-- Load the required Braintree client components. -->
+  <script src="https://js.braintreegateway.com/web/3.62.1/js/client.min.js"></script>
+  <script src="https://js.braintreegateway.com/web/3.62.1/js/apple-pay.min.js"></script>
+  <script src="https://pay.google.com/gp/p/js/pay.js"></script>
+  <script src="https://js.braintreegateway.com/web/3.62.1/js/google-payment.min.js"></script>
+  <!-- Load JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Apple and Google Pay - Demo</title>
+</head>
+
+<body>
+
+  <div id="app">
+    <h2>Amount: 10.70 USD</h2>
+    <div id="google-pay-container"></div>
+    <br />
+    <div id="apple-pay-container"></div>
+    <br />
+    <div id="auth-status"></div>
+  </div>
+  
+  <script src="./applePay.js"></script>
+  <script src="./googlePay.js"></script>
+  <script src="./main.js"></script>
+</body>
